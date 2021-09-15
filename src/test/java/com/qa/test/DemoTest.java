@@ -1,7 +1,7 @@
 package com.qa.test;
 
 import com.alibaba.fastjson.JSONObject;
-import com.qa.common.BaseTest;
+import com.qa.common.BaseCommon;
 import com.qa.http.service.TestService;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 /**
  * 用例类一般与开发的接口类对应，覆盖接口类下的接口用例
  */
-public class DemoTest1 extends BaseTest {
+public class DemoTest extends BaseCommon {
 
     @Test
     public void testcase1(){

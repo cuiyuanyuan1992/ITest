@@ -3,7 +3,7 @@ package com.qa.common;
 /**
  * 基础用例类，用于用例继承进行通用操作处理,如登陆
  */
-public class BaseTest extends InitEnv{
+public class BaseCommon extends InitEnv{
 
     public static String cookie ;//如公共cookie，接口常用参数
 
