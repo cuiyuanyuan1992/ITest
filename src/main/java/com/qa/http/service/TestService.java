@@ -11,9 +11,10 @@ import java.util.Map;
  */
 public class TestService extends InitEnv {
     HttpUtils httpUtils = new HttpUtils();
+    private String host = properties.getProperty("host");
 
     public String getById(String mediaId,String cookie){
-        String url = properties.getProperty("host")+"/api/mgc/media/video/detail/getById";
+        String url = host+"/api/mgc/media/video/detail/getById";
         Map<String,String> params = new HashMap<String, String>();
         params.put("mediaId",mediaId);
         params.put("_t",String.valueOf(System.currentTimeMillis()));
